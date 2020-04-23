@@ -20,7 +20,7 @@ impl fmt::Display for CheckError {
 
 pub fn check_error(resp: Response) -> Result<Response, CheckError> {
     if resp.status().is_success() {
-        return Ok(resp)
+        Ok(resp)
     } else if resp.status().is_server_error() {
         Err(CheckError{message: format!("{:?}", resp)})
     } else {

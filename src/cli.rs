@@ -44,7 +44,7 @@ pub fn get_public_ip_action(c: &Context) {
         println!("My public IP is: {}", json["origin"]);
         std::process::exit(0);
     } else {
-        eprintln!("Cannot find origin IP from response: {:#?}", json);
+        eprintln!("Cannot find key origin from response: {:#?}", json);
         std::process::exit(1);
     }
 }
