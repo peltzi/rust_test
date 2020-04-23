@@ -1,0 +1,1 @@
+Stupid Rust practise application

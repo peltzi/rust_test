@@ -1,0 +1,10 @@
+[package]
+name = "rust_test"
+version = "0.1.0"
+authors = ["Toni Peltonen <peltzi@peltzi.fi>"]
+edition = "2018"
+
+[dependencies]
+serde_json = "1.0"
+seahorse = "0.7.1"
+reqwest = { version = "0.10", features = ["blocking", "json"] }
